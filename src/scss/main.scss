@@ -1,9 +1,19 @@
 @import "_normalize";
+@import "_variables";
+@import "modules/nav&caption";
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
 }

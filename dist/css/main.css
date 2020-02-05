@@ -64,7 +64,8 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+  text-decoration: none; }
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -307,12 +308,25 @@ template {
 [hidden] {
   display: none; }
 
+.navbar {
+  background-color: #171819; }
+  .navbar__logo {
+    font-size: 1.75rem;
+    color: #ffffff; }
+
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
