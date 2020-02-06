@@ -1,0 +1,38 @@
+.feature{
+  background-color: $dark-color;
+  padding: 5rem 0;
+  &__box{
+    display: flex;
+    align-items: center;
+    color: $white-color;
+  }
+}
+
+.box-left{
+  flex-basis: 50%;
+  padding-right: 8rem;
+  &__heading{
+    font-size: 2.25rem;
+  }
+  &__text{
+    font-size: 1.375rem;
+  }
+  &__info{
+    font-size: 1.125rem;
+    color: $p-color;
+    margin: 2rem 0;
+  }
+  &__member{
+    font-size: 0.875rem;
+    display: block;
+    background-color: $primary-color;
+    color: $white-color;
+    text-align: center;
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+.box-right{
+  flex-basis: 50%;
+  padding-left: 3rem;
+}
