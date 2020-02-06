@@ -4,13 +4,14 @@
   &__box{
     display: flex;
     align-items: center;
+    justify-content: center;
     color: $white-color;
   }
 }
 
 .box-left{
-  flex-basis: 50%;
-  padding-right: 8rem;
+  flex-basis: 40%;
+  margin-right: 3rem;
   &__heading{
     font-size: 2.25rem;
   }
@@ -29,10 +30,28 @@
     color: $white-color;
     text-align: center;
     padding: 0.875rem 1.5rem;
+    transition: color, background-color .2s linear;
+    &:hover{
+      color: $primary-color;
+      background-color: $white-color;
+    }
   }
 }
 
 .box-right{
-  flex-basis: 50%;
+  flex-basis: 30%;
   padding-left: 3rem;
+  border-left: 1px solid $p-color;
+  // padding-left: 3rem;
+  &__heading{
+    font-size: 2.25rem;
+  }
+  &__hours{
+    font-size: 1.125;
+    color: $p-color;
+    margin-top: .5rem;
+  }
+  &__week{
+    margin-bottom: 0;
+  }
 }
