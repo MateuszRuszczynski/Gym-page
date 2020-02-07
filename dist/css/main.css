@@ -314,7 +314,15 @@ template {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10; }
+  z-index: 10;
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear; }
+  @media (max-width: 1023px) {
+    .navbar {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%); } }
   .navbar__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -328,12 +336,23 @@ template {
     max-width: 1200px;
     margin: 0 auto;
     padding: .5rem 2rem; }
+    @media (max-width: 1023px) {
+      .navbar__container {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .navbar__logo {
     font-size: 1.75rem;
     color: #ffffff;
     font-weight: bold;
     -webkit-transition: color .2s linear;
     transition: color .2s linear; }
+    @media (max-width: 1023px) {
+      .navbar__logo {
+        display: none; } }
     .navbar__logo:hover {
       color: #f13a11; }
   .navbar__list {
@@ -344,9 +363,14 @@ template {
         -ms-flex-align: center;
             align-items: center;
     list-style: none; }
+    @media (max-width: 1023px) {
+      .navbar__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .navbar__link:nth-child(5) {
-    margin-right: 1.5rem;
-    color: red; }
+    margin-right: 1.5rem; }
   .navbar__link {
     font-size: 0.875;
     color: #ffffff;
@@ -355,6 +379,11 @@ template {
     margin: 0 1rem;
     -webkit-transition: color .2s linear;
     transition: color .2s linear; }
+    @media (max-width: 1023px) {
+      .navbar__link {
+        margin-bottom: 1rem;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #666262; } }
     .navbar__link:hover {
       color: #f13a11; }
 
@@ -405,6 +434,27 @@ template {
       .caption__link--red:hover {
         border: 1px solid #ffffff;
         color: #ffffff; }
+
+.btn {
+  border: none;
+  color: red;
+  background-color: transparent;
+  font-size: 30px;
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 15; }
+  @media (max-width: 1023px) {
+    .btn {
+      display: block; } }
+
+.navbar--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
 
 .feature {
   background-color: #171819;
