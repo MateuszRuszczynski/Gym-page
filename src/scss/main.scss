@@ -5,6 +5,7 @@
 @import "modules/about";
 @import "modules/training";
 @import "modules/schedule";
+@import "modules/contact";
 
 html {
   box-sizing: border-box;
@@ -20,5 +21,7 @@ html {
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  // padding: 0 2rem;
+  &--table{
+    overflow: auto;
+  }
 }

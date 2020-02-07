@@ -153,7 +153,7 @@
         <p class="schedule__text">our weekly GYM schedules</p>
         <h3 class="schedule__heading">Workout timetable</h3>
       </header>
-      <div class="container">
+      <div class="container container--table">
         <table class="table">
           <thead class="table__head">
             <tr class="table__row">
@@ -170,17 +170,17 @@
             <tr class="table__row">
               <td class="table__info">7:00 AM</td>
               <td class="table__info">
-                <stron class="table__exericise">Cardio</stron>
+                <p class="table__exericise">Cardio</p>
                 <span class="table__time">7:00 AM - 9:00 AM</span>
               </td>
               <td class="table__info">
-                <stron class="table__exericise">Power Fitness</stron>
+                <p class="table__exericise">Power Fitness</p>
                 <span class="table__time">7:00 AM - 9:00 AM</span>
               </td>
               <td class="table__info"></td>
               <td class="table__info"></td>
               <td class="table__info">
-                <stron class="table__exericise">Yoga Section</stron>
+                <p class="table__exericise">Yoga Section</p>
                 <span class="table__time">7:00 AM - 9:00 AM</span>
               </td>
               <td class="table__info"></td>
@@ -190,16 +190,16 @@
               <td class="table__info"></td>
               <td class="table__info"></td>
               <td class="table__info">
-                <stron class="table__exericise">Boxing</stron>
+                <p class="table__exericise">Boxing</p>
                 <span class="table__time">8:00 AM - 9:00 AM</span>
               </td>
               <td class="table__info">
-                <stron class="table__exericise">Aerobic</stron>
+                <p class="table__exericise">Aerobic</p>
                 <span class="table__time">8:00 AM - 9:00 AM</span>
               </td>
               <td class="table__info"></td>
               <td class="table__info">
-                <stron class="table__exericise">Cardio</stron>
+                <p class="table__exericise">Cardio</p>
                 <span class="table__time">8:00 AM - 9:00 AM</span>
               </td>
             </tr>
@@ -207,16 +207,16 @@
               <td class="table__info">11:00 AM</td>
               <td class="table__info"></td>
               <td class="table__info">
-                <stron class="table__exericise">Boxing</stron>
+                <p class="table__exericise">Boxing</p>
                 <span class="table__time">11:00 AM - 2:00 PM</span>
               </td>
               <td class="table__info">
-                <stron class="table__exericise">Aerobic</stron>
+                <p class="table__exericise">Aerobic</p>
                 <span class="table__time">11:30 AM - 3:30 PM</span>
               </td>
               <td class="table__info"></td>
               <td class="table__info">
-                <stron class="table__exericise">Body work</stron>
+                <p class="table__exericise">Body work</p>
                 <span class="table__time">11:50 AM - 5:20 PM</span>
               </td>
               <td class="table__info"></td>
@@ -224,26 +224,62 @@
             <tr class="table__row">
               <td class="table__info">2:00 PM</td>
               <td class="table__info">
-                <stron class="table__exericise">Boxing</stron>
+                <p class="table__exericise">Boxing</p>
                 <span class="table__time">2:00 PM - 4:00 PM</span>
               </td>
               <td class="table__info">
-                <stron class="table__exericise">Power lifting</stron>
+                <p class="table__exericise">Power lifting</p>
                 <span class="table__time">3:00 PM - 6:00 PM</span>
               </td>
               <td class="table__info"></td>
               <td class="table__info">
-                <stron class="table__exericise">Cardio</stron>
+                <p class="table__exericise">Cardio</p>
                 <span class="table__time">6:00 PM - 9:00 PM</span>
               </td>
               <td class="table__info"></td>
               <td class="table__info">
-                <stron class="table__exericise">Crosfit</stron>
+                <p class="table__exericise">Crosfit</p>
                 <span class="table__time">5:00 PM - 7:00 PM</span>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="contact__box">
+          <div class="contact__left">
+            <h4 class="contact__heading">Feel free to ask anything</h4>
+            <form action="" class="contact__form">
+              <p class="contact__item">
+                <input type="text" name="name" placeholder="Name" required>
+              </p>
+              <p class="contact__item">
+                <input type="email" name="email" placeholder="Email" required>
+              </p>
+              <p class="contact__item">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+              </p>
+              <p class="contact__item">
+                <input type="submit" value="Send Message">
+              </p>
+            </form>
+          </div>
+          <div class="contact__right">
+            <div class="contact__location">
+              <h4 class="contact__heading">Where you can find us</h4>
+              <p class="contact__text">
+                <i class="fas fa-map-marker-alt"></i> 120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil
+              </p>
+            </div>
+            <div class="contact__map">
+              <iframe
+                src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

@@ -1,0 +1,46 @@
+.schedule{
+  padding: 7rem 0;
+  background-color: $dark-color;
+  &__box{
+    text-align: center;
+  }
+  &__text{
+    color: $gray-color;
+    font-size: 1.375rem;
+    margin: 0;
+  }
+  &__heading{
+    color: $white-color;
+    font-size: 2.25rem;
+    margin: 1rem 0 4rem;
+  }
+}
+
+.table{
+  color: $white-color;
+  width: 100%;
+  padding: 0 1rem;
+  &__day{
+    padding: 1rem;
+    border-right: 1px solid $dark-color;
+    background-color: $primary-color;
+  }
+  &__row &__info:first-child{
+    background-color: $primary-color;
+    border-top: 1px solid $dark-color;
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  &__row &__info:not(:first-child){
+    padding: 1rem;
+    border-right: 1px solid $gray-color;
+    border-bottom: 1px solid $gray-color;
+    text-align: center;
+  }
+  &__exericise{
+    margin: 0 0 .4rem;
+  }
+  &__time{
+    color: $gray-color;
+  }
+}
