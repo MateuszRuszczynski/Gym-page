@@ -1,0 +1,47 @@
+.contact{
+  padding: 5rem 0;
+  &__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__heading{
+    font-size: 2.25rem;
+    font-weight: bold;   
+    margin-top: 0;
+  }
+  &__type{
+    width: 100%;
+    padding: 1rem;
+    &--btn{
+      background-color: $dark-color;
+      color: $white-color;
+      transition: background-color .2s linear;
+      &:hover{
+        background-color: $primary-color;
+      }
+    }
+  }
+  &__right{
+    align-self: flex-start;
+  }
+  &__location{
+    border-bottom: 1px solid $gray-color;
+  }
+  &__text{
+    font-size: 1.125rem;
+    color: $dark-color;
+    margin-bottom: 3rem;
+  }
+  &__map{
+    margin-top: 3rem;
+  }
+  &__iframe{
+    width: 100%;
+  }
+}
+
+
+.fa-map-marker-alt{
+  color: $primary-color;
+}

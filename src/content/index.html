@@ -253,16 +253,17 @@
             <h4 class="contact__heading">Feel free to ask anything</h4>
             <form action="" class="contact__form">
               <p class="contact__item">
-                <input type="text" name="name" placeholder="Name" required>
+                <input class="contact__type" type="text" name="name" placeholder="Name" required>
               </p>
               <p class="contact__item">
-                <input type="email" name="email" placeholder="Email" required>
+                <input class="contact__type" type="email" name="email" placeholder="Email" required>
               </p>
               <p class="contact__item">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                <textarea class="contact__type" name="message" id="" cols="30" rows="10" placeholder="Message"
+                  required></textarea>
               </p>
               <p class="contact__item">
-                <input type="submit" value="Send Message">
+                <input class="contact__type contact__type--btn" type="submit" value="Send Message">
               </p>
             </form>
           </div>
@@ -274,7 +275,7 @@
               </p>
             </div>
             <div class="contact__map">
-              <iframe
+              <iframe class="contact__iframe"
                 src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
                 width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
@@ -282,6 +283,25 @@
         </div>
       </div>
     </section>
+    <footer class="foot">
+      <div class="container">
+        <div class="foot__box">
+          <div class="foot__left">
+            <p class="foot__text">Copyright © 2020 Power Fit Gym.</p>
+            <p class="foot__text">Design: Toomplate</p>
+            <p class="foot__text">Author: Mateusz Ruszczyński</p>
+          </div>
+          <div class="foot_right">
+            <a href="mailto:hello@company.com" class="foot__link">
+              <i class="far fa-envelope"></i> hello@company.com
+            </a>
+            <a href="#" class="foot__link">
+              <i class="fas fa-phone-square-alt"></i> 010-020-0840
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
   <script src="js/main.js"></script>
 </body>

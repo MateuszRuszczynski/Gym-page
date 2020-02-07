@@ -634,6 +634,52 @@ template {
   .table__time {
     color: #909090; }
 
+.contact {
+  padding: 5rem 0; }
+  .contact__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .contact__heading {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-top: 0; }
+  .contact__type {
+    width: 100%;
+    padding: 1rem; }
+    .contact__type--btn {
+      background-color: #171819;
+      color: #ffffff;
+      -webkit-transition: background-color .2s linear;
+      transition: background-color .2s linear; }
+      .contact__type--btn:hover {
+        background-color: #f13a11; }
+  .contact__right {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  .contact__location {
+    border-bottom: 1px solid #909090; }
+  .contact__text {
+    font-size: 1.125rem;
+    color: #171819;
+    margin-bottom: 3rem; }
+  .contact__map {
+    margin-top: 3rem; }
+  .contact__iframe {
+    width: 100%; }
+
+.fa-map-marker-alt {
+  color: #f13a11; }
+
+.foot {
+  padding: 3rem 0;
+  border-top: 1px solid #909090; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
