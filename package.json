@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "predeploy": "gulp build",
+    "deploy": "gh-pages -d dist -b master"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maciejkorsan/wtf-gulp-starter.git"

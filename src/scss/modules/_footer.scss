@@ -5,12 +5,20 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 1023px){
+      flex-direction: column;
+    }
   }
   &__text, &__link{
     color: $gray-color;
   }
   &__link:not(:last-child){
     margin-right: 1.2rem;
+  }
+}
+@media (max-width: 1023px){
+  .foot__left{
+    margin-bottom: 2rem;
   }
 }
 

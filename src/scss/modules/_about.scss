@@ -1,11 +1,17 @@
 .about{
   background-color: $about-bg-color;
   padding: 7rem 0;
+  @media (max-width: 1023px){
+    padding: 5rem 0;
+  }
   &__box{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
+    @media (max-width: 1023px){
+      flex-direction: column;
+    }
   }
 }
 
@@ -14,10 +20,13 @@
   padding: 0 1rem;
   @media (max-width: 1150px){
     flex-basis: 40%;
+    margin-bottom: 3rem;
+    text-align: center;
   }
   &__heading{
     color: $dark-color;
     font-size: 2.25rem;
+    margin-top: 0;
   }
   &__text{
     font-size: 1.125;
@@ -29,9 +38,17 @@
   width: 250px;
   box-shadow: 10px 5px 29px -2px rgba(0,0,0,0.71);
   overflow: hidden;
-  
+  @media (max-width: 1023px){
+    width: 60%;
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+  }
   &:hover &__photo{
     transform: scale(1.1);
+    @media (max-width: 1023px){
+      transform: scale(1);
+    }
   }
   &__photo{
     width: 100%;
