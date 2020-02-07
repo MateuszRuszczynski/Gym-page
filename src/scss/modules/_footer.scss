@@ -1,4 +1,19 @@
 .foot{
   padding: 3rem 0;
   border-top: 1px solid $gray-color;
+  &__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__text, &__link{
+    color: $gray-color;
+  }
+  &__link:not(:last-child){
+    margin-right: 1.2rem;
+  }
+}
+
+.fa-envelope, .fa-phone-square-alt{
+  color: $primary-color;
 }
