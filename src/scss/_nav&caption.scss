@@ -7,7 +7,6 @@
   z-index: 10;  
   transition: transform .2s linear;
   @media (max-width: 1023px){
-    // display: none;
     transform: translateY(-100%);
   }
   &__container{
@@ -68,7 +67,7 @@
 
 .caption{
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,.6)) ,url(../../assets/img/hero-bg.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.6)) ,url(../assets/img/hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

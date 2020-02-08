@@ -389,8 +389,8 @@ template {
 
 .caption {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url(../../assets/img/hero-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../assets/img/hero-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url(../assets/img/hero-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../assets/img/hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -442,8 +442,8 @@ template {
   font-size: 30px;
   display: none;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   z-index: 15; }
   @media (max-width: 1023px) {
     .btn {
