@@ -1,4 +1,4 @@
-(src/assets/img/cover.png)
+![Gym Page](src/assets/img/cover.png)
 
 # Narzędzia i technologie:
 
