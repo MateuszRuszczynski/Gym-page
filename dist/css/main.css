@@ -414,6 +414,9 @@ template {
     text-transform: uppercase;
     font-weight: bold;
     color: #ffffff; }
+    @media (max-width: 450px) {
+      .caption__heading {
+        font-size: 2rem; } }
   .caption__link {
     display: inline-block;
     font-size: 0.875;
@@ -441,7 +444,7 @@ template {
   background-color: transparent;
   font-size: 30px;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   z-index: 15; }
